@@ -1,5 +1,8 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
+import { Typography } from '@mui/material';
+import Button from '@mui/material/Button';
+
 import stars from './lights.js'
 
 export default function MainPage() {
@@ -27,8 +30,9 @@ export default function MainPage() {
     return (
         <div className='container'>
             <div className='card' >
-                Explore Mental WellBeing with us
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                <Typography variant='h4'>Explore Mental WellBeing with CureWe</Typography>
+                <TextField fullWidth label="Mood" id="fullWidth" margin='normal'/>
+                <Button variant='contained'>Get Analysis</Button>
 
             </div>
         </div>
